@@ -1,0 +1,57 @@
+# Font configuration (changes require restart)
+font:
+  # The size to use.
+  size: 12
+  # The normal (roman) font face to use.
+  normal:
+    family: Input Nerd Font
+    # Style can be specified to pick a specific face.
+    style: Regular
+
+  # The bold font face
+  bold:
+    family: Input Nerd Font
+    # Style can be specified to pick a specific face.
+    # style: Bold
+
+  # The italic font face
+  italic:
+    family: Input
+    # Style can be specified to pick a specific face.
+    # style: Italic
+scrolling:
+        history: 10000
+multiplier: 1
+window.dynamic_title: true
+
+colors:
+
+  primary:
+    background: '0x282a36'
+    foreground: '0xffffff'
+  bright:
+    black:   '0x404040'
+    red:     '0xff5555'
+    green:   '0x50fa7b'
+    yellow:  '0xbd93f9' #'0xf1fa8c'
+    blue:    '0x6272a4' #'0xbd93f9'
+    magenta: '0xff79c6'
+    cyan:    '0x8be9fd' #'0x8be9fd'
+    white:   '0xffffff'
+
+  # Bright colors
+  normal:
+    black:   '0xb0b0b0'
+    red:     '0xff7f7f'
+    green:   '0x7bfb9c'
+    yellow:  '0xcdaefa'
+    blue:    '0x8995bb'
+    magenta: '0xff9ad4'
+    cyan:    '0xa8eefd' #'0x8be9fd'
+    white:   '0xffffff'
+window:
+    padding:
+        x: 4
+        y: 4
+
+background_opacity: 0.7

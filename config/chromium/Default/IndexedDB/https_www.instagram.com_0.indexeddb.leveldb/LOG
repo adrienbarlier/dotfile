@@ -1,0 +1,6 @@
+2021/07/24-04:48:11.940 5930 Reusing MANIFEST /home/drop/.config/chromium/Default/IndexedDB/https_www.instagram.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/07/24-04:48:11.941 5930 Recovering log #4
+2021/07/24-04:48:11.946 5930 Reusing old log /home/drop/.config/chromium/Default/IndexedDB/https_www.instagram.com_0.indexeddb.leveldb/000004.log 
+2021/07/24-04:48:30.646 4a1a Level-0 table #8: started
+2021/07/24-04:48:30.671 4a1a Level-0 table #8: 1156765 bytes OK
+2021/07/24-04:48:30.681 4a1a Delete type=0 #4

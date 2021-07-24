@@ -1,0 +1,229 @@
+
+body{
+    margin: 1rem;
+}
+.card{
+
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 0 0.8rem;
+    border-bottom: 1px solid #ACAEB8;
+}
+.card-header img{
+    width: 5rem;
+    height: 1.5rem;
+}
+.card-header>div{
+    width: 7rem;
+    height: 1.8rem;
+    position: relative;
+}
+.card-header>div .form-control{
+    width: 7rem;
+    height: 1.8rem;
+    border: none;
+    outline: none;
+    color: #767784;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 5px;
+    border: 1px solid #fe8f24;
+    padding: 0 16px 0 8px;
+    box-shadow: 0 2px 4px 0 #F8F9FE;
+}
+.card-header>div .form-control>option{
+    padding: 10px;
+    min-height: 1.8rem !important;
+}
+.card-header>div:after{
+    content: "";
+    width: 10px;
+    height: 14px;
+    background: url(../images/bg-select.png) no-repeat center;
+    position: absolute;
+    right: 8px;
+    top: 26%;
+    pointer-events: none;
+}
+
+
+.card-body{
+
+}
+
+.form_item{
+    padding: 24px 0;
+}
+.row{
+    display: flex;
+    padding: 10px 20px;
+}
+.row label{
+    flex: .4;
+    padding-right: 20px;
+    text-align: right;
+    line-height: 1.8rem;
+    font-size: 14px;
+    color: #747582;
+    font-weight: bold;
+}
+.row div{
+    flex: 1;
+    height: 1.8rem;
+    position: relative;
+}
+.row div .form-control{
+    width: 100%;
+    height: 1.8rem;
+    border: none;
+    outline: none;
+    color: #767784;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 5px;
+    border: 1px solid #fe8f24;
+    padding: 0 16px 0 8px;
+    box-shadow: 0 2px 4px 0 #F8F9FE;
+}
+.row div .form-control>option{
+    padding: 10px;
+    min-height: 1.8rem !important;
+}
+.row div .form-control>option:hove{
+    background: #fe8f24;
+}
+.row div:after{
+    content: "";
+    width: 10px;
+    height: 14px;
+    background: url(../images/bg-select.png) no-repeat center;
+    position: absolute;
+    right: 8px;
+    top: 26%;
+    pointer-events: none;
+}
+
+.form-checkout{
+    padding: 20px 0 50px;
+}
+
+.check_cont{
+    width: 80%;
+    display: inline-block;
+    font-size: 14px;
+    color: #747582;
+    font-weight: bold;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+.checkboxStyle{
+    display: block;
+    width: 48px;
+    height: 24px;
+    border-radius: 100px;
+    background: #D8D8D8;
+    /* margin-top: -18px; */
+    margin-top: 10px;
+    position: relative;
+    float: right;
+}
+.checkboxStyle i{
+    display: inline-block;
+    width: 24px;
+    height:24px;
+    background: #fff;
+    border-radius: 100%;
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+input[type="checkbox"]:checked + .checkboxStyle{
+    background: #fe8f24;
+}
+input[type="checkbox"]:checked + .checkboxStyle i{
+    left: 24px;
+}
+
+.body_p{
+    font-size: 12px;
+    color: #C5CBF3;
+    text-align: center;
+    margin: 0;
+}
+
+.cardFoot{
+    padding: 30px 0;
+    border-top: 1px solid #ACAEB8;
+}
+.cardFoot a{
+    display: block;
+    width: 84%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #fe8f24;
+    border-radius: 5px;
+    border: none;
+    margin-left: 8%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.label-success {
+    background-color: #5cb85c;
+}
+.footer {
+    width: 100%;
+    height: 50px;
+    margin-top: -5px;
+}
+
+.footer_left {
+    width: 15%;
+    position: relative;
+    display: inline-block;
+}
+.footer_left img {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+}
+
+.footer_right {
+    width: 85%;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.footer a {
+    color: #000000;
+    text-decoration: none;
+    /* font-weight: 700; */
+}
+
+.footer_right span {
+    color: #4020FD;
+    font-weight: 700;
+}

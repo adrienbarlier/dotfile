@@ -1,0 +1,7 @@
+2021/07/24-02:20:33.828 1dfb Reusing MANIFEST /home/drop/.config/chromium/Default/IndexedDB/https_tinder.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/07/24-02:20:33.828 1dfb Recovering log #7
+2021/07/24-02:20:33.830 1dfb Reusing old log /home/drop/.config/chromium/Default/IndexedDB/https_tinder.com_0.indexeddb.leveldb/000007.log 
+2021/07/24-02:20:34.541 1d8f Compacting 1@1 + 1@2 files
+2021/07/24-02:20:34.590 1d8f Generated table #10@1: 185 keys, 48797 bytes
+2021/07/24-02:20:34.590 1d8f Compacted 1@1 + 1@2 files => 48797 bytes
+2021/07/24-02:20:34.604 1d8f compacted to: files[ 0 0 1 0 0 0 0 ]

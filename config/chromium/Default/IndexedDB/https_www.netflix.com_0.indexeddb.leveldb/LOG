@@ -1,0 +1,30 @@
+2021/07/24-03:45:58.295 98a Reusing MANIFEST /home/drop/.config/chromium/Default/IndexedDB/https_www.netflix.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/07/24-03:45:58.295 98a Recovering log #27
+2021/07/24-03:45:58.308 98a Reusing old log /home/drop/.config/chromium/Default/IndexedDB/https_www.netflix.com_0.indexeddb.leveldb/000027.log 
+2021/07/24-04:14:05.824 cf5 Level-0 table #32: started
+2021/07/24-04:14:05.865 cf5 Level-0 table #32: 2198086 bytes OK
+2021/07/24-04:14:05.882 cf5 Delete type=0 #27
+2021/07/24-04:17:57.043 1079 Compacting 1@1 + 1@2 files
+2021/07/24-04:17:57.067 1079 Generated table #33@1: 68 keys, 18420 bytes
+2021/07/24-04:17:57.067 1079 Compacted 1@1 + 1@2 files => 18420 bytes
+2021/07/24-04:17:57.075 1079 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/07/24-04:17:57.076 1079 Delete type=2 #32
+2021/07/24-04:17:57.076 1079 Delete type=2 #29
+2021/07/24-05:02:32.452 5c99 Level-0 table #35: started
+2021/07/24-05:02:32.510 5c99 Level-0 table #35: 2189869 bytes OK
+2021/07/24-05:02:32.520 5c99 Delete type=0 #31
+2021/07/24-05:05:21.254 5c97 Compacting 1@1 + 1@2 files
+2021/07/24-05:05:21.270 5c97 Generated table #36@1: 68 keys, 17732 bytes
+2021/07/24-05:05:21.271 5c97 Compacted 1@1 + 1@2 files => 17732 bytes
+2021/07/24-05:05:21.281 5c97 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/07/24-05:05:21.281 5c97 Delete type=2 #35
+2021/07/24-05:05:21.281 5c97 Delete type=2 #33
+2021/07/24-05:55:04.875 6bbc Level-0 table #38: started
+2021/07/24-05:55:04.907 6bbc Level-0 table #38: 2031543 bytes OK
+2021/07/24-05:55:04.918 6bbc Delete type=0 #34
+2021/07/24-05:59:40.865 6bbc Compacting 1@1 + 1@2 files
+2021/07/24-05:59:40.881 6bbc Generated table #39@1: 69 keys, 15238 bytes
+2021/07/24-05:59:40.882 6bbc Compacted 1@1 + 1@2 files => 15238 bytes
+2021/07/24-05:59:40.892 6bbc compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/07/24-05:59:40.892 6bbc Delete type=2 #38
+2021/07/24-05:59:40.892 6bbc Delete type=2 #36

@@ -1,0 +1,6 @@
+2021/07/24-05:35:30.471 6988 Creating DB /home/drop/.config/chromium/Default/IndexedDB/https_evangelion.fandom.com_0.indexeddb.leveldb since it was missing.
+2021/07/24-05:35:30.505 6988 Reusing MANIFEST /home/drop/.config/chromium/Default/IndexedDB/https_evangelion.fandom.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/07/24-06:01:13.558 6bbc Level-0 table #5: started
+2021/07/24-06:01:13.566 6bbc Level-0 table #5: 3348 bytes OK
+2021/07/24-06:01:13.575 6bbc Delete type=0 #3
+2021/07/24-06:01:13.575 6bbc Manual compaction at level-0 from (begin) .. (end); will stop at (end)

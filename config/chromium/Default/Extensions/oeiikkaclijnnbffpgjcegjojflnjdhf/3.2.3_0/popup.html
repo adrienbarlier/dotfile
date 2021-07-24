@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Facebook Ads Chrome Extension</title>
+		
+		<script src="jquery-3.4.0.min.js"></script>
+		<script src="popup.js"></script>
+		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+		<style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.wrap {
+    padding: 0;
+	margin-top: -225px !important;
+    margin-bottom:-1;
+    margin-left: 40px !important;
+    transform-origin:top left;
+    transform:translateY(100%) rotate(60deg);
+}
+
+</style>
+	</head>
+
+<body>
+<center>
+<div style="background-color:red; margin-top:-20px; color:white; width: 320px;">
+<h3>Product Mafia</h3>
+<h1>AD HUNTER 2.0</h1>
+
+</div>
+</center>
+<div class="container" style="overflow-y: hidden; height:800px; width: 320px; padding:20px;">
+
+   <div class="form-group has-feedback">
+    	<div class="row">
+        
+   
+        <div class="col-md-6">
+             <label>Minimum Reactions:</label><br>
+             <input id="interaction_filter" value = "0" type="number" class="form-control">
+            
+        </div>
+		<hr>
+		        <div class="col-md-6">
+             <label>Minimum Comments:</label><br>
+             <input id="comment_filter" value = "0" type="number" class="form-control">
+            
+        </div>
+		<hr>
+		<div class="col-md-6">
+             <label>Minimum Shares:</label><br>
+             <input id="share_filter" value = "0" type="number" class="form-control">
+            
+        </div>
+		<hr>
+		<div class="col-md-6" style="display: none">
+             <label>Minimum Views:</label>
+			 <br><font size="1" color="red">* Using this filter shows video ads only!</font<br>
+             <input id="view_filter" value = "0" type="number" class="form-control">
+            
+        </div>
+		
+		
+		<br>
+		<div class="col-md-6 text-center">
+             <label> Enable / Disable </label><br>
+      			 <label class="switch">
+      		   <input id="isenabled" type="checkbox">
+      		   <span class="slider round"></span>
+      		   </label>
+			   
+			
+			   
+        </div>
+		
+		
+		<!-- <div class="col-md-6 text-center" id="autoscroll_toggle_div">
+      <label> Autoscroll </label><br>
+      			 <label class="switch">
+      		   <input id="autoscroll_toggle" type="checkbox">
+      		   <span class="slider round"></span>
+      		   </label>
+			   
+        </div> -->
+		
+
+        <div class="col-md-6 text-center" id="autoscroll_toggle_div" style="display:none">
+          <label></label><br>
+          <label class="switch">
+             <!-- <input id="autoscroll_toggle" type="checkbox"> -->
+             <!-- <span class="slider round"></span> -->
+          </label>
+       </div>
+
+
+        
+    	</div>
+  <div class="wrap">
+    <img src="snake.png" width="100"/>
+</div>
+   </div>
+
+
+
+	</body>
+</html>

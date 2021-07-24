@@ -1,0 +1,5 @@
+# enable substitution for prompt
+setopt prompt_subst
+# Maia prompt
+PROMPT="%B%{$fg[yellow]%}[%{$fg[green]%}%n%{$fg[yellow]%}@%{$fg[green]%}%M %{$fg[blue]%}%~ %{$fg[yellow]%}]%{$fg[green]%} $%{$reset_color%} %b"
+RPROMPT="%{$fg[red]%} %(?..[%?])"

@@ -1,0 +1,6 @@
+2021/07/23-18:04:04.082 1e03 Creating DB /home/drop/.config/chromium/Default/IndexedDB/https_www.fandom.com_0.indexeddb.leveldb since it was missing.
+2021/07/23-18:04:04.105 1e03 Reusing MANIFEST /home/drop/.config/chromium/Default/IndexedDB/https_www.fandom.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/07/23-18:29:06.337 2132 Level-0 table #5: started
+2021/07/23-18:29:06.345 2132 Level-0 table #5: 2376 bytes OK
+2021/07/23-18:29:06.353 2132 Delete type=0 #3
+2021/07/23-18:29:06.353 2132 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

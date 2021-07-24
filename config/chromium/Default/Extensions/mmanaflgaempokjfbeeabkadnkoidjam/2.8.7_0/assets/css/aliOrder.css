@@ -1,0 +1,110 @@
+.dsers-alert{
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    padding: 10px 12px;
+    background-color: rgb(249, 250, 251);
+    border: 1px solid rgb(225, 233, 239);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: content-box;
+}
+.dsers-alert p{
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.dsers-alert p img{
+    width: 28px;
+    height: 28px;
+    margin-right: 6px;
+    border-radius: 4px;
+}
+.dsers-alert p span{
+    
+}
+.dsers-alert-btnBox a{
+    display: inline-block;
+    padding: 0 20px;
+    color: #fff;
+    background-color: rgb(130, 200, 83);
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 32px;
+    cursor: pointer;
+}
+.dsers-alert-btnBox a:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(148, 224, 94);
+}
+
+.dsers-alert-btnBox{
+    
+}
+.dsers-alert-btnBox a:first-child{
+    margin-right: 8px;
+}
+
+
+.dsers-message{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 10000;
+}
+
+.dsers-import-warring{
+    width: 290px;
+    box-shadow: rgba(0,0,0,0.12) 0px 0px 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.dsers-card-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 0 0.8rem;
+    border-bottom: 1px solid rgb(216, 223, 230);
+    padding: 11px;
+}
+.dsers-card-header > img{
+    /* width: 5rem;
+    height: 1.5rem; */
+    height: 20px;
+}
+.dsers-card-header a > img{
+    width: 20px;
+    height: 20px;
+}
+
+.dsers-card-content{
+    padding: 20px;
+    text-align: center;
+}
+
+.dsers-card-content .dsers-card-content-img img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.dsers-card-content p{
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(47, 63, 74);
+    margin-bottom: 0;
+}
+.dsers-card-content p a{
+    color: #fe8f24;
+    cursor: pointer;
+}
+.dsers-card-content p a:hover{
+    color: #fe8f24;
+    text-decoration: underline;
+    
+}

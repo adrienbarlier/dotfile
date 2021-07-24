@@ -1,0 +1,33 @@
+2021/07/24-03:45:56.865 5 Reusing MANIFEST /home/drop/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2021/07/24-03:45:56.867 5 Recovering log #92
+2021/07/24-03:45:56.868 5 Reusing old log /home/drop/.config/chromium/Default/Local Storage/leveldb/000092.log 
+2021/07/24-03:55:57.981 c Level-0 table #97: started
+2021/07/24-03:55:58.001 c Level-0 table #97: 22712 bytes OK
+2021/07/24-03:55:58.017 c Delete type=0 #92
+2021/07/24-04:22:57.978 13 Level-0 table #99: started
+2021/07/24-04:22:57.995 13 Level-0 table #99: 17578 bytes OK
+2021/07/24-04:22:58.011 13 Delete type=0 #96
+2021/07/24-04:41:52.791 20 Level-0 table #101: started
+2021/07/24-04:41:52.804 20 Level-0 table #101: 23274 bytes OK
+2021/07/24-04:41:52.816 20 Delete type=0 #98
+2021/07/24-04:51:22.040 23 Level-0 table #103: started
+2021/07/24-04:51:22.057 23 Level-0 table #103: 366248 bytes OK
+2021/07/24-04:51:22.073 23 Delete type=0 #100
+2021/07/24-04:51:22.076 20 Compacting 4@0 + 1@1 files
+2021/07/24-04:51:22.124 20 Generated table #104@0: 1621 keys, 1554204 bytes
+2021/07/24-04:51:22.124 20 Compacted 4@0 + 1@1 files => 1554204 bytes
+2021/07/24-04:51:22.136 20 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/07/24-04:51:22.141 20 Delete type=2 #97
+2021/07/24-04:51:22.141 20 Delete type=2 #94
+2021/07/24-04:51:22.141 20 Delete type=2 #101
+2021/07/24-04:51:22.142 20 Delete type=2 #99
+2021/07/24-04:51:22.142 20 Delete type=2 #103
+2021/07/24-05:13:31.868 28 Level-0 table #106: started
+2021/07/24-05:13:31.916 28 Level-0 table #106: 372206 bytes OK
+2021/07/24-05:13:31.927 28 Delete type=0 #102
+2021/07/24-05:35:37.501 3f Level-0 table #108: started
+2021/07/24-05:35:37.519 3f Level-0 table #108: 418344 bytes OK
+2021/07/24-05:35:37.529 3f Delete type=0 #105
+2021/07/24-06:32:57.978 7e Level-0 table #110: started
+2021/07/24-06:32:57.996 7e Level-0 table #110: 19930 bytes OK
+2021/07/24-06:32:58.007 7e Delete type=0 #107

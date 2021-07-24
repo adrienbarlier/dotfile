@@ -1,0 +1,95 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "/assets/icons/48x48.png",
+      "default_popup": "popups/default.html"
+   },
+   "content_scripts": [ {
+      "js": [ "content.bundle.js", "scripts/content/getAEExt.js" ],
+      "matches": [ "https://*.aliexpress.com/*", "https://aliexpress.ru/*" ],
+      "run_at": "document_idle"
+   }, {
+      "css": [ "assets/css/main.css" ],
+      "js": [ "content.bundle.js", "scripts/content/category.js" ],
+      "matches": [ "https://*.aliexpress.com/af/*", "https://*.aliexpress.com/w/*", "https://*.aliexpress.com/category/*", "https://*.aliexpress.com/wholesale*", "https://*.aliexpress.com/premium*", "https://*.aliexpress.com/wishlist/wish_list_product_list.htm*", "https://*.aliexpress.com/*_reviews.html*", "https://home.aliexpress.com/dropshipper/ds_center.htm*", "https://*.aliexpress.com/item/*", "https://aliexpress.ru/*" ],
+      "run_at": "document_idle"
+   }, {
+      "js": [ "sync.bundle.js", "syncContent.bundle.js" ],
+      "matches": [ "https://trade.aliexpress.com/orderList.htm*", "https://trade.aliexpress.com/order_list.htm*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [ "assets/css/main.css" ],
+      "js": [ "content.bundle.js", "scripts/content/product.js" ],
+      "matches": [ "https://*.aliexpress.com/item/*", "https://aliexpress.ru/item/*", "https://*.aliexpress.com/store/product/*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [ "assets/css/aliOrder.css" ],
+      "js": [ "aliOrder.bundle.js", "scripts/content/aliOrder.js" ],
+      "matches": [ "https://*.aliexpress.com/order_list.htm*", "https://*.aliexpress.com/orderList.htm*" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "content.bundle.js", "scripts/content/dsers.js" ],
+      "matches": [ "https://*.dsers.com/*", "*://localhost/*" ]
+   }, {
+      "js": [ "content.bundle.js", "scripts/content/order.js" ],
+      "matches": [ "https://shoppingcart.aliexpress.com/order/confirm_order.htm*" ]
+   }, {
+      "css": [ "assets/css/main.css" ],
+      "js": [ "oberlo.bundle.js", "scripts/content/oberlo.js" ],
+      "matches": [ "https://app.oberlo.com/my-products*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [ "assets/css/main.css" ],
+      "js": [ "shopmaster.bundle.js", "scripts/content/shopmaster.js" ],
+      "matches": [ "https://www.shopmaster.com/woocommerce/product/index.html*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [ "assets/css/main.css" ],
+      "js": [ "shopmaster.bundle.js", "scripts/content/shopmaster.js" ],
+      "matches": [ "https://www.shopmaster.com/shopify/product/index.html*" ],
+      "run_at": "document_end"
+   }, {
+      "css": [ "assets/css/main.css" ],
+      "js": [ "dropified.bundle.js", "scripts/content/dropified.js" ],
+      "matches": [ "https://app.dropified.com/product?store=c*" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "shopifyOrder.bundle.js", "scripts/content/shopifyOrder.js" ],
+      "matches": [ "https://*.myshopify.com/admin/orders/*" ],
+      "run_at": "document_end"
+   }, {
+      "all_frames": true,
+      "js": [ "stasticsContent.bundle.js" ],
+      "matches": [ "*://*.aliexpress.ru/item*", "*://*.aliexpress.ru/store*", "*://*.aliexpress.com/item*", "*://*.aliexpress.com/store*", "*://*.aliexpress.com/*evaluationDetail.htm*", "*://*.aliexpress.com/*evaluationList.htm*" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "dsersPageContent.bundle.js" ],
+      "matches": [ "*://*.dsers.com/*", "*://localhost/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "Import and sync products from AliExpress to your DSers platform account.",
+   "differential_fingerprint": "1.e3fa937042329c611979157a6161f6377237ef734458deae6daf692fb0336f00",
+   "externally_connectable": {
+      "matches": [ "*://*.dsers.com/*", "*://localhost/*" ]
+   },
+   "homepage_url": "https://www.dsers.com",
+   "icons": {
+      "128": "assets/icons/128x128.png",
+      "16": "assets/icons/16x16.png",
+      "48": "assets/icons/48x48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoX4DVav6v001kQttLSt1D8xqw534cLxva2Ur7z6Tt6XIGBd4+7KRwJumc9p2creokKw++SzPNvECR5BrweoaKZCmkNhK1OtL/vs1s/+4JIufJNDLuhFdFdkL9gniFfMKKkZjiZif9bsxIt10dL9iNIYRiV0CvrK5AvfmtreyY6va0pMzHfAjdWh6DGfd9ECcvmRQjcU/LjdPugoE7ZzhSuLQ00MNLeH1t/o02iZbmy9APJ/atK7iD5rG96Qs0MuQ/g5oQqQo3f49n1sdWhyTm80NHOOmqzvMw4OkwZFJ2DOEo3P19qzuRbNrs5D3cNivsy9MfLZ+qNPhn6V0QqCcoQIDAQAB",
+   "manifest_version": 2,
+   "name": "DSers -  AliExpress.com Product Importer",
+   "options_ui": {
+      "chrome_style": false,
+      "page": "/popups/default.html"
+   },
+   "permissions": [ "notifications", "tabs", "storage", "unlimitedStorage", "webNavigation", "cookies", "https://*.aliexpress.com/*", "https://*.aliexpress.ru/*", "webRequest", "webRequestBlocking" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.8.7",
+   "web_accessible_resources": [ "assets/images/logo.svg", "assets/images/logo-full.png", "assets/images/logo-small.png", "assets/images/logo-xs.png", "assets/images/icon-sync.png", "assets/images/btn-floating.png", "assets/images/icon-time.png", "assets/images/icon-x.png", "assets/images/icon-import-success.png", "assets/images/icon-import-error.png", "assets/images/icon-check.png", "assets/images/icon-close.png", "assets/images/icon-close-circle.png", "assets/images/icon_track_normal.png", "assets/images/icon_track_active.png", "assets/images/icon_track_hover.png", "assets/images/icon_import_normal.png", "assets/images/sync.png", "assets/images/icon-close.svg", "/assets/images/icon-warring.png", "/assets/images/icon-loading.gif", "stasticsInject.bundle.js" ]
+}

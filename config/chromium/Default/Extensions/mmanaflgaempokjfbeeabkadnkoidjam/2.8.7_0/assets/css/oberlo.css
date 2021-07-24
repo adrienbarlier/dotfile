@@ -1,0 +1,42 @@
+body{
+    margin: 1rem;
+}
+.card-header{
+    padding: 0.2rem 0 0.8rem;
+    border-bottom: 1px solid #ACAEB8;
+}
+.card-header img{
+    width: 5rem;
+    height: 1.5rem;
+}
+
+.card-oberlo-title{
+    font-size: 14px;
+    text-align: center;
+}
+
+.card-oberlo-txt{
+    font-size: 14px;
+    text-align: center;
+}
+.card-oberlo-btn{
+    display: block;
+    width: 130px;
+    height: 30px;
+    /* line-height: 30px; */
+    border-radius: 4px;
+    text-align: center;
+    background-color: #fe8f24;
+    color: #fff;
+    font-size: 14px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    border: none;
+}
+
+.card-oberlo-btn:active{
+    background-color: #d96c14;
+}
+.card-oberlo-btn:hover{
+    background-color: #ffa94d;
+}

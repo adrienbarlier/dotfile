@@ -1,0 +1,6 @@
+2021/07/24-04:19:03.835 1079 Creating DB /home/drop/.config/chromium/Default/IndexedDB/https_twitter.com_0.indexeddb.leveldb since it was missing.
+2021/07/24-04:19:03.866 1079 Reusing MANIFEST /home/drop/.config/chromium/Default/IndexedDB/https_twitter.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/07/24-04:45:21.526 4a1d Level-0 table #5: started
+2021/07/24-04:45:21.535 4a1d Level-0 table #5: 29849 bytes OK
+2021/07/24-04:45:21.544 4a1d Delete type=0 #3
+2021/07/24-04:45:21.545 4a1d Manual compaction at level-0 from (begin) .. (end); will stop at (end)

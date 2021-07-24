@@ -1,0 +1,118 @@
+set	$mod		Alt
+set	$left		h
+set	$down		j
+set	$up		k
+set	$right		l
+set	$term		foot
+set	$menu		exec $term  --app-id=launcher sway-launcher-desktop
+set	$fm		pcmanfm
+
+input "type:keyboard" {
+xkb_layout fr
+repeat_rate 100
+repeat_delay 140
+}
+
+bar {
+swaybar_command waybar
+}
+
+floating_modifier	$mod		normal
+
+client.focused		#282a36 #50fa7b #000000 #50fa7b #bd93f9
+client.unfocused	#282a36 #50fa7b #000000 #50fa7b #44475a
+
+gaps inner 0
+default_border pixel 1
+font Input Nerd Font 18px
+
+#output eDP-1 pos 0 1440
+#output eDP-1 mode 1920x1080@60Hz
+#output eDP-1 bg /home/drop/Images/fondhd.png tile
+output		eDP-1			disable
+output		DP-1			mode 2560x1440@120Hz pos 2560 0
+output		DP-2			mode 2560x1440@120Hz pos 0 0
+output		DP-1			bg /home/drop/Images/swaybg.png fill
+output		DP-2			bg /home/drop/Images/fond.png fill
+#output		*				max_render_time 4
+
+for_window [app_id="^launcher*"] floating enable, sticky enable, resize set 30 ppt 60 ppt
+
+bindsym		$mod+u			exec $fm
+bindsym		$mod+Return		exec $term
+bindsym		$mod+Backspace		exec grim -t jpeg ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg
+bindsym		$mod+q			kill
+bindsym		$mod+d 			exec $menu
+
+bindsym		$mod+Shift+c		reload
+bindsym		$mod+Shift+n		exec swaynag -t warning -m 'Exit sway?' -b 'Yes' 'swaymsg exit'
+
+bindsym		$mod+p			exec grim -g "$(slurp)" ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg
+bindsym		$mod+Shift+p		exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy
+
+
+bindsym		$mod+$left		focus left
+bindsym		$mod+$down		focus down
+bindsym		$mod+$up		focus up
+bindsym		$mod+$right		focus right
+
+bindsym		$mod+Shift+$left	move left
+bindsym		$mod+Shift+$down	move down
+bindsym		$mod+Shift+$up		move up
+bindsym		$mod+Shift+$right	move right
+
+bindsym		$mod+g			gaps inner current plus 8
+bindsym		$mod+Shift+g		gaps inner current minus 8
+bindsym		$mod+o			gaps outer current plus 8
+bindsym		$mod+Shift+o		gaps outer current minus 8
+
+bindsym		$mod+b			splith
+bindsym		$mod+v			splitv
+bindsym		$mod+w			layout toggle split
+
+bindsym		$mod+f			fullscreen
+
+bindsym		$mod+s			floating toggle
+
+bindsym		$mod+space		focus mode_toggle
+
+bindsym		$mod+a			workspace number 1
+bindsym		$mod+z			workspace number 2
+bindsym		$mod+e			workspace number 3
+bindsym		$mod+r			workspace number 4
+bindsym		$mod+t			workspace number 5
+bindsym		$mod+y			workspace number 6
+
+bindsym		$mod+Shift+a		move container to workspace number 1
+bindsym		$mod+Shift+z		move container to workspace number 2
+bindsym		$mod+Shift+e		move container to workspace number 3
+bindsym		$mod+Shift+r		move container to workspace number 4
+bindsym		$mod+Shift+t		move container to workspace number 5
+bindsym		$mod+Shift+y		move container to workspace number 6
+
+#bindsym	$mod+Shift+y		resize grow left 8px
+#bindsym	$mod+			resize shrink left 8px
+#bindsym 	$mod+Shift+u		resize grow down 8px
+#bindsym	$mod+u			resize shrink down 8px
+#bindsym	$mod+Shift+i		resize grow up 8px
+#bindsym	$mod+i			resize shrink up 8px
+#bindsym	$mod+Shift+o		resize grow right 8px
+#bindsym	$mod+o			resize shrink right 8px
+
+#bindsym	$mod+m			layout stacking
+#bindsym 	$mod+. layout tabbed
+#bindsym 	$mod+a focus parent
+
+exec_always {
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+gsettings	set	$gnome-schema gtk-theme 'Dracula'
+gsettings	set	$gnome-schema icon-theme 'Dracula'
+gsettings	set	$gnome-schema cursor-theme 'Xcursor-breeze'
+gsettings	set	$gnome-schema font-name 'Input Nerd Font'
+		set 	$my_cursor 'Xcursor-breeze'
+		set 	$my_cursor_size 24
+		set 	$gnome-schema org.gnome.desktop.interface
+		set	$kvantum-theme 'Dracula'
+}
+
+include /etc/sway/config.d/*

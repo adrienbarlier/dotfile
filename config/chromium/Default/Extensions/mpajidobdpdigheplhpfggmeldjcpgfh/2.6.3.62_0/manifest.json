@@ -1,0 +1,40 @@
+{
+   "author": "Giang Nguyen",
+   "background": {
+      "persistent": true,
+      "scripts": [ "assets/js/vendors.js", "assets/js/background.js" ]
+   },
+   "browser_action": {
+      "default_popup": "browser_action.html",
+      "default_title": "Ali Hunter"
+   },
+   "content_scripts": [ {
+      "css": [ "assets/css/content_script.css" ],
+      "js": [ "assets/js/vendors.js", "assets/js/content_script.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   }, {
+      "css": [ "assets/css/content_script_shopify.css" ],
+      "js": [ "assets/js/vendors.js", "assets/js/content_script_shopify.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "AliExpress tool for price tracking, seller rating & order listing. Must have for dropship & online shopping.",
+   "externally_connectable": {
+      "matches": [ "https://*.alitools.io/*", "https://*.aliexpress.com/*", "https://*.alihunter.io/*" ]
+   },
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmi/p784ixo+itRuCuorlOHlIKJpqe9f7yxaZi8P0WWQeDoUNR64lLR23BIwdLhCfKV5H19busE3yrKYnLjwjrjXglWd1KDIRxjNRDc3E9PMm0Itc3npSo8t2UNtslVruC4J7abrRQMAdhWDSoUXjE2PeXfdYwoyX5kWJkya/0pVkfrhX0O2RYy876610nM5G86SQyKaM+RKvJ+0kFxKnDkPaYjfFbeA1TlN6Ku1bwMAHNJbgB0qaiVKXbmT1Dxwn3gXLgSjQg2SUvfnrpBElyphPTWWlDlB/4ElTX/VaN6HjLFD9Cw1ksvr4X/YLu0ICzmmMsY+dAtF8UpEVV9QFOwIDAQAB",
+   "manifest_version": 2,
+   "name": "Ali Hunter - AliExpress Product Tracker",
+   "permissions": [ "tabs", "*://*.aliexpress.com/*", "https://*.alitools.io/*", "https://*.alihunter.io/*", "storage", "webRequest", "webRequestBlocking", "notifications" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.6.3.62"
+}

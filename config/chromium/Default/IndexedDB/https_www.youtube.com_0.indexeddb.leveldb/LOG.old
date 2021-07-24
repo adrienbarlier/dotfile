@@ -1,0 +1,27 @@
+2021/07/24-00:17:52.384 af3 Reusing MANIFEST /home/drop/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/07/24-00:17:52.385 af3 Recovering log #160
+2021/07/24-00:17:52.406 af3 Reusing old log /home/drop/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000160.log 
+2021/07/24-00:17:52.407 af3 Delete type=2 #159
+2021/07/24-00:17:52.407 af3 Delete type=2 #161
+2021/07/24-00:17:55.173 af3 Level-0 table #165: started
+2021/07/24-00:17:55.202 af3 Level-0 table #165: 388599 bytes OK
+2021/07/24-00:17:55.216 af3 Delete type=0 #160
+2021/07/24-00:17:55.216 af3 Manual compaction at level-0 from '\x008\x00\x00\x00' @ 72057594037927935 : 1 .. '\x009\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/07/24-00:17:55.216 af3 Manual compaction at level-1 from '\x008\x00\x00\x00' @ 72057594037927935 : 1 .. '\x009\x00\x00\x00' @ 0 : 0; will stop at '\x009\x02\x02\x01\x14\x00s\x00h\x00e\x00l\x00l\x00_\x00i\x00d\x00e\x00n\x00t\x00i\x00f\x00i\x00e\x00r\x00_\x00k\x00e\x00y' @ 45661 : 1
+2021/07/24-00:17:55.216 af3 Compacting 1@1 + 1@2 files
+2021/07/24-00:17:55.232 af3 Generated table #166@1: 254 keys, 28876 bytes
+2021/07/24-00:17:55.232 af3 Compacted 1@1 + 1@2 files => 28876 bytes
+2021/07/24-00:17:55.240 af3 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/07/24-00:17:55.240 af3 Delete type=2 #165
+2021/07/24-00:17:55.241 af3 Manual compaction at level-1 from '\x009\x02\x02\x01\x14\x00s\x00h\x00e\x00l\x00l\x00_\x00i\x00d\x00e\x00n\x00t\x00i\x00f\x00i\x00e\x00r\x00_\x00k\x00e\x00y' @ 45661 : 1 .. '\x009\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/07/24-00:17:55.564 bea Level-0 table #168: started
+2021/07/24-00:17:55.578 bea Level-0 table #168: 51586 bytes OK
+2021/07/24-00:17:55.596 bea Delete type=0 #164
+2021/07/24-00:17:55.596 bea Delete type=2 #162
+2021/07/24-00:17:55.596 bea Manual compaction at level-0 from '\x009\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00:\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/07/24-00:17:55.596 bea Manual compaction at level-1 from '\x009\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00:\x00\x00\x00' @ 0 : 0; will stop at '\x00:\x01\x1f\x04\x02\x03\x00\x00\x00\x00\x00\x00\xf0?\x03\x00\x00\xb3$W\xadwB\x00\x03\x00\x00\x00\x00\x00\x00\x00@' @ 50721 : 1
+2021/07/24-00:17:55.596 bea Compacting 1@1 + 1@2 files
+2021/07/24-00:17:55.605 bea Generated table #169@1: 252 keys, 28687 bytes
+2021/07/24-00:17:55.605 bea Compacted 1@1 + 1@2 files => 28687 bytes
+2021/07/24-00:17:55.613 bea compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/07/24-00:17:55.614 bea Manual compaction at level-1 from '\x00:\x01\x1f\x04\x02\x03\x00\x00\x00\x00\x00\x00\xf0?\x03\x00\x00\xb3$W\xadwB\x00\x03\x00\x00\x00\x00\x00\x00\x00@' @ 50721 : 1 .. '\x00:\x00\x00\x00' @ 0 : 0; will stop at (end)

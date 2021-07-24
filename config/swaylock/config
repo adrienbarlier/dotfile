@@ -1,0 +1,28 @@
+clock
+indicator
+# no-unlock-indicator
+daemonize
+indicator-caps-lock
+timestr=%k:%M
+datestr=%a %e %m %Y
+image=/home/adrien/Documents/darkg.png
+scaling=fill
+#effect-scale=0.4
+#effect-vignette=0.2:0.5
+#effect-blur=4x2
+font=FiraCode
+
+# Ring
+indicator-radius=180
+# line-uses-ring
+line-color=#5e81ac
+text-color=#eceff4
+# inside-color=#3d7f8d
+inside-ver-color=#81a1c1
+line-ver-color=#81a1c1
+ring-ver-color=#81a1c1
+ring-color=#7490ad
+key-hl-color=#67809a
+separator-color=#67809a
+layout-text-color=#eceff4
+line-wrong-color=#bf616a

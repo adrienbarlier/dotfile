@@ -1,0 +1,15 @@
+body {
+}
+.clickable {
+    cursor:pointer;
+    color:#234da7;
+}
+input[type=text] {
+    padding: 4px 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px #ddd;
+    -moz-box-shadow: 2px 2px 3px #ddd;
+    outline: 0;
+    -webkit-appearance: textfield;
+}

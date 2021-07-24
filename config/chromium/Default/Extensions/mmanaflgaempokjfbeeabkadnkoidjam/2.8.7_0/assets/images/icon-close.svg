@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20">
+  <desc>
+    Created with Sketch.
+  </desc>
+  <defs>
+    <path id="a" d="M11.41 10l4.3-4.3a1 1 0 1 0-1.42-1.4L10 8.58l-4.3-4.3a1 1 0 1 0-1.4 1.42L8.58 10l-4.3 4.3a1 1 0 1 0 1.42 1.4L10 11.42l4.3 4.3a1 1 0 0 0 1.4 0 1 1 0 0 0 0-1.42L11.42 10z"/>
+  </defs>
+  <use fill="#B4C6D9" fill-rule="nonzero" xlink:href="#a"/>
+</svg>

@@ -1,0 +1,33 @@
+{
+   "checksum": "0431dee65ca9397b4bb3114b2be01539",
+   "roots": {
+      "bookmark_bar": {
+         "children": [  ],
+         "date_added": "13270677832165292",
+         "date_modified": "13270769051993117",
+         "guid": "00000000-0000-4000-a000-000000000002",
+         "id": "1",
+         "name": "Barre de favoris",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13270677832165294",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000003",
+         "id": "2",
+         "name": "Autres favoris",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13270677832165296",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000004",
+         "id": "3",
+         "name": "Favoris sur mobile",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

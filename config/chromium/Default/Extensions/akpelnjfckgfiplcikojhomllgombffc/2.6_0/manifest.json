@@ -1,0 +1,17 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://www.themebeta.com/chrome-theme-creator-online.html"
+      },
+      "urls": [ "http://www.themebeta.com/" ]
+   },
+   "description": "Chrome Theme Creator, create and share Chrome themes online.",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJOYktnCI6c2WKhezDAuLKoq9UlDB0e6nkoztAfy6BviSTRaW7t9hwipwuokRTWMFszHkW1PY3zx+lOusyGBmoPkS/CfQ0MzsH9WuSpLggVxckunI/Tephc9Hxv+VGzC8y72he0xExOZ/ZM6dcUl6J9pxoN9EgJK6Rto17qM03UQIDAQAB",
+   "manifest_version": 2,
+   "name": "Theme Creator",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.6"
+}
